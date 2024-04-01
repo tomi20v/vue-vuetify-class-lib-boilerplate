@@ -1,0 +1,32 @@
+{
+  "name": "bonolib",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [ "dist" ],
+  "exports": {
+    ".": {
+      "import": "./dist/bonolib.js",
+      "require": "./dist/bonolib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite --host",
+    "_build": "vue-tsc && vite build",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}

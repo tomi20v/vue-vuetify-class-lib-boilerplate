@@ -1,0 +1,14 @@
+version: "3.6"
+services:
+  bonolib:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: bonolib
+    # uncomment following line to start container in dev mode with hot reload
+#    command: [ "npm", "run", "serve" ]
+    command: [ "/bin/ash" ]
+    tty: true
+    volumes:
+      - .:/app/
+    working_dir: /app/
