@@ -12,4 +12,8 @@ Just a boilerplate put together with aforementioned libs and objective
 - build
   - ```npm run build```
 - publish/copy to target project
+- if you have problems of vuetify components not being registered, you can try including all components and directives
+  to the createVuetify({...}) call
+  ```import * as components from "vuetify/components";```
+  ```import * as directives from "vuetify/directives";```
 
