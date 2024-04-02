@@ -1,7 +1,7 @@
-import MyButton from "./components/MyButton.vue";
-import HelloWorldX from "./components/HelloWorldX.vue";
+import LibTestButton from "./components/LibTestButton.vue";
+import LibTestHelloWorld from "./components/LibTestHelloWorld.vue";
 
 export {
-  MyButton,
-  HelloWorldX,
+  LibTestButton,
+  LibTestHelloWorld,
 }

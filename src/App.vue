@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import HelloWorldX from './components/HelloWorldX.vue'
-import MyButton from "./components/MyButton.vue";
+import LibTestHelloWorld from './components/LibTestHelloWorld.vue'
+import LibTestButton from "./components/LibTestButton.vue";
 </script>
 
 <template>
   <div>
+    BONOLIB
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -12,8 +13,8 @@ import MyButton from "./components/MyButton.vue";
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorldX msg="Vite + Vue" />
-  <my-button text="asd"></my-button>
+  <LibTestHelloWorld msg="vue-vuetify-class-lib-boilerplate" />
+  <lib-test-button text="v-btn with @Prop text"></lib-test-button>
 </template>
 
 <style scoped>

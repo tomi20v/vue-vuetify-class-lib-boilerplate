@@ -1,15 +1,20 @@
 <template>
-  <v-btn>{{text}}</v-btn>
-    <v-progress-linear indeterminate></v-progress-linear>
+  <v-btn @click="onClick">{{text}}</v-btn>
+  <v-progress-linear indeterminate></v-progress-linear>
 </template>
 
 <script lang="ts">
-import {Component, Prop, Vue} from "vue-facing-decorator";
+import {Component, Emit, Prop, Vue} from "vue-facing-decorator";
 
 @Component
-export default class MyButton extends Vue {
+export default class LibTestButton extends Vue {
+
   @Prop
   text!: string;
+
+  @Emit('click')
+  onClick() {}
+
 }
 
 </script>
