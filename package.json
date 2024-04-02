@@ -1,15 +1,16 @@
 {
-  "name": "bonolib",
+  "name": "vue-vuetify-class-lib-boilerplate",
   "private": true,
-  "version": "0.0.8",
+  "version": "0.1.0",
+  "keywords": [ "vue", "vue3", "vuetify", "boilerplate" ],
   "type": "module",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/bonolib.js",
-      "require": "./dist/bonolib.umd.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     },
     "./style.css": "./dist/style.css"
   },
