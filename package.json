@@ -1,9 +1,11 @@
 {
   "name": "bonolib",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.6",
   "type": "module",
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/bonolib.js",
@@ -15,12 +17,14 @@
   "scripts": {
     "dev": "vite --host",
     "_build": "vue-tsc && vite build",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && npm pack",
     "types": "vue-tsc",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-facing-decorator": "^3.0.4",
+    "vuetify": "^3.5.13"
   },
   "devDependencies": {
     "@types/node": "^20.12.2",

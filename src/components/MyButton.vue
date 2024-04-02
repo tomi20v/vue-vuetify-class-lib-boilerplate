@@ -1,12 +1,23 @@
-<script setup lang="ts">
+<template>
+  <v-btn>{{text}}</v-btn>
+    <v-progress-linear indeterminate></v-progress-linear>
+</template>
 
-defineProps<{ text: string }>()
+<script lang="ts">
+import {Component, Prop, toNative, Vue} from "vue-facing-decorator";
+
+// defineProps<{ text: string }>()
+
+@Component
+class MyButton extends Vue {
+  @Prop
+  text!: string;
+}
+
+export default toNative(MyButton);
 
 </script>
 
-<template>
-  <button class="btn-cta">{{ text }}</button>
-</template>
 
 <style scoped>
 .btn-cta {
