@@ -4,17 +4,13 @@
 </template>
 
 <script lang="ts">
-import {Component, Prop, toNative, Vue} from "vue-facing-decorator";
-
-// defineProps<{ text: string }>()
+import {Component, Prop, Vue} from "vue-facing-decorator";
 
 @Component
-class MyButton extends Vue {
+export default class MyButton extends Vue {
   @Prop
   text!: string;
 }
-
-export default toNative(MyButton);
 
 </script>
 

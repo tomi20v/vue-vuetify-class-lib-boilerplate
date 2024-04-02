@@ -1,7 +1,7 @@
 {
   "name": "bonolib",
   "private": true,
-  "version": "0.0.6",
+  "version": "0.0.8",
   "type": "module",
   "files": [
     "dist"
@@ -31,6 +31,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-vue-facing-decorator-hmr": "^1.0.1",
     "vue-tsc": "^2.0.6"
   }
 }

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueFacingDecoratorHmr from "vite-plugin-vue-facing-decorator-hmr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -30,5 +31,6 @@ export default defineConfig({
   },
   plugins: [
     vue(),
+    vueFacingDecoratorHmr(),
   ],
 })
